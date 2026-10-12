@@ -1,21 +1,17 @@
-% Metódy inžinierskej práce
-
+% Metody inzinierskej prace
 \documentclass[10pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
-%\usepackage[T1]{fontenc}
-\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[IL2]{fontenc} 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{url} % príkaz \url na formátovanie URL
-\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
+\usepackage{url} 
+\usepackage{hyperref} 
 \usepackage{cite}
-%\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2026/27, vedenie: Afanasiev Maksym}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2026/27, vedenie: Afanasiev Maksym}}
 
 \author{Afanasiev Maksym\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
@@ -23,7 +19,7 @@
 	{\small \texttt{...@stuba.sk}}
 	}
 
-\date{\small 30. september 2015} % upravte
+\date{\small 13. oktober 2026}
 
 
 
@@ -41,6 +37,9 @@
 
 Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
 
+% Ak subor diagram-crop.pdf este nie je v priecinku, nechajte tento riadok zakomentovany
+%\includegraphics[scale=1.0]{diagram-crop.pdf}
+
 Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
 Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
 Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
@@ -54,7 +53,7 @@ Z obr.~\ref{f:rozhod} je všetko jasné.
 
 \begin{figure*}[tbh]
 \centering
-%\includegraphics[scale=1.0]{diagram.pdf}
+\includegraphics[width=\textwidth]{diagram-crop.pdf}
 Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
 \caption{Rozhodujúci argument.}
 \label{f:rozhod}
@@ -111,14 +110,13 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 
 
-\section{Záver} \label{zaver} % prípadne iný variant názvu
+\section{Záver} \label{zaver} 
 
 
 
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliographystyle{plain} 
 \end{document}
